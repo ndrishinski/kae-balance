@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+#biggone {
+    width: 700px;
+    align-content: center;
+}
