@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
+  before_action :post_owner, only: [:edit, :update, :destroy, :toggle_status]
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   # GET /blogs
@@ -25,6 +27,7 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
+    
 
     respond_to do |format|
       if @blog.save
@@ -67,6 +70,13 @@ class BlogsController < ApplicationController
       @blog = Blog.find(params[:id])
     end
 
+
+    def post_owner
+      unless current_user.roles.include?(:user)
+        flash[:notice] = 'Access denied as you are not owner of this Post'
+        redirect_to blogs_path
+      end
+    end
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
       params.require(:blog).permit(:title, :body)

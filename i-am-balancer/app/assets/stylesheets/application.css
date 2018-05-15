@@ -17,3 +17,7 @@
     width: 700px;
     align-content: center;
 }
+
+.noshow {
+    display: none;
+}
