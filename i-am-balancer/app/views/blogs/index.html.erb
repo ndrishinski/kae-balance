@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Blogs</h1>
+<div class="container">
+<div class="row">
+<h1>Blogs and Recipes!</h1>
 
 <table>
   <thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= blog.body %></td>
+        <hr>
         <td class=""><%= link_to 'Show', blog %></td>
         <td class="noshow"><%= link_to 'Edit', edit_blog_path(blog) %></td>
         <td class=""><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,4 +28,6 @@
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+# <%= link_to 'New Blog', new_blog_path %>
+</div>
+</div>

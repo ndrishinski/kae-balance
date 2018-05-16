@@ -27,3 +27,24 @@
 .noshow {
     display: none;
 }
+
+.card {
+    margin-top: 8px;
+}
+
+.fab, .fas {
+    font-size: 100px;
+    margin: 5px;
+}
+
+#fixme {
+    margin-top: -40px;
+}
+
+#centerit {
+    align-self: center;
+}
+
+.movedown {
+    margin-top: 10%;
+}
