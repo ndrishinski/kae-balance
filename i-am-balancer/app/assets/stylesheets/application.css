@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ navbar {
+     background-color: red;
+ }
+
 #biggone {
     width: 700px;
     align-content: center;
