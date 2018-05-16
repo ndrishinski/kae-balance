@@ -14,8 +14,9 @@
  *= require_self
  */
 
- navbar {
-     background-color: red;
+ .navbar {
+     background-color: transparent;
+     height: 80px;
  }
 
 #biggone {
