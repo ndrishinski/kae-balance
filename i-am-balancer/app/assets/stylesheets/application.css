@@ -78,3 +78,13 @@
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+ }
