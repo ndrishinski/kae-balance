@@ -15,8 +15,9 @@
  */
 
  .navbar {
-     background-color: transparent;
-     height: 80px;
+     background-color: white;
+     height: 82px;
+     border-bottom: 2px solid black;
  }
 
 #biggone {
@@ -30,11 +31,14 @@
 
 .card {
     margin-top: 8px;
+    background-color: transparent!important;
+    box-shadow: 2px 2px 2px black;
 }
 
 .fab, .fas {
     font-size: 100px;
     margin: 5px;
+    color: white;
 }
 
 #fixme {
@@ -47,4 +51,30 @@
 
 .movedown {
     margin-top: 10%;
+}
+
+.littleless {
+    margin-top: 7%;
+}
+
+.wider {
+    margin: -1px;
+    margin-top: 2px;
+}
+
+.pickme {
+    background-image: url(coolone.jpg);
+     background-attachment: fixed;
+     background-size: 80%;
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+}
+
+.pickme * {
+    color: white;    
+}
+
+.profile-img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
 }
