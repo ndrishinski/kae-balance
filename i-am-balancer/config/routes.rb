@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   end
   root to: 'pages#home'
 
-  get 'pages/about'
+  get '/about', to: 'pages#about'
 
-  get 'pages/contact'
+  get '/contact', to: 'pages#contact'
 
-  get 'pages/shop'
+  get '/shop', to: 'pages#shop'
 
   resources :blogs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
